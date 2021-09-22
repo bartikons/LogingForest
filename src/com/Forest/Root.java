@@ -1,6 +1,6 @@
 package com.Forest;
 
-public interface Root {
-    void TakingNutrientsFromTheSoil(Object soil);
-    void growRoot();
+public class Root {
+    void TakingNutrientsFromTheSoil(Object soil){}
+    void growRoot(){}
 }

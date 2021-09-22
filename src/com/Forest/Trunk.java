@@ -1,5 +1,6 @@
 package com.Forest;
 
-public interface Trunk {
-    void growBranch();
+public class Trunk {
+    void growBranch() {
+    }
 }

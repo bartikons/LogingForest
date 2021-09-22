@@ -2,10 +2,11 @@ package com.Forest;
 
 import java.util.List;
 
-public abstract class Tree  implements Leaf,Branch,Trunk,Root{
+public abstract class Tree {
     private Integer nutrient;
-    private List<Object> leaves;
-    private List<Object> branches;
+    private Trunk trunk;
+    private List<Leaf> leaves;
+    private List<Branch> branches;
 
     protected Tree() {
     }
@@ -20,20 +21,27 @@ public abstract class Tree  implements Leaf,Branch,Trunk,Root{
         this.nutrient = nutrient;
     }
 
-    public List<Object> getLeaves() {
+    public List<Leaf> getLeaves() {
         return leaves;
     }
 
-    protected void setLeaves(List<Object> leaves) {
+    protected void setLeaves(List<Leaf> leaves) {
         this.leaves = leaves;
     }
 
-
-    public List<Object> getBranches() {
+    public List<Branch> getBranches() {
         return branches;
     }
 
-    protected void setBranches(List<Object> branches) {
+    protected void setBranches(List<Branch> branches) {
         this.branches = branches;
+    }
+
+    public Trunk getTrunk() {
+        return trunk;
+    }
+
+    public void setTrunk(Trunk trunk) {
+        this.trunk = trunk;
     }
 }

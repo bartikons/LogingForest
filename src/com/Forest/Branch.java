@@ -1,6 +1,6 @@
 package com.Forest;
 
-public interface Branch {
-    void growLeaf();
-
+public class Branch {
+    void growLeaf() {
+    }
 }

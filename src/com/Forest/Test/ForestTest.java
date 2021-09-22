@@ -20,12 +20,6 @@ class ForestTest {
     @Test
     @DisplayName("Testing")
     void test() {
-        assertNull(deciduous.produceOxygen(new Object(), new Object()));
-        assertNull(coniferous.produceOxygen(new Object(), new Object()));
-        assertEquals("Needle", deciduous.leafType());
-        assertEquals("leaf", coniferous.leafType());
-        coniferous.TakingNutrientsFromTheSoil((Integer) 1);
-        deciduous.TakingNutrientsFromTheSoil((Integer) 1);
         assertEquals(1, coniferous.getNutrient());
         assertEquals(1, deciduous.getNutrient());
     }

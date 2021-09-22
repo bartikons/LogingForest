@@ -1,7 +1,17 @@
 package com.Forest;
 
-public interface Leaf {
-    String leafType();
-    Object produceOxygen(Object light,Object Carbon);
-    void flowering();
+public class Leaf {
+    private LeafType leafType;
+
+    private enum LeafType {
+        NEEDLE,
+        LEAF
+    }
+
+    Object produceOxygen(Object light, Object Carbon) {
+        return new Object();
+    }
+
+    void flowering() {
+    }
 }
